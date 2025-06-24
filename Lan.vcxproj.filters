@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{fb69d7ce-39eb-4bc8-b601-fbfb20684bd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\UI">
+      <UniqueIdentifier>{199fb3c6-ac8d-4d81-941f-7baffd939ba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\UI\Lan">
+      <UniqueIdentifier>{029580f4-daf5-4caa-aad8-990bd2cfd27c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\UI\Login">
+      <UniqueIdentifier>{2cce5634-ea4f-4786-a29a-c57681fd9ed6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Lan.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\UI\Lan\Lan.cpp">
+      <Filter>Src\UI\Lan</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\UI\Login\Login.cpp">
+      <Filter>Src\UI\Login</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Src\UI\Lan\Lan.h">
+      <Filter>Src\UI\Lan</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\UI\Login\Login.h">
+      <Filter>Src\UI\Login</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Src\UI\Lan\Lan.ui">
+      <Filter>Src\UI\Lan</Filter>
+    </QtUic>
+    <QtUic Include="Src\UI\Login\Login.ui">
+      <Filter>Src\UI\Login</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>
