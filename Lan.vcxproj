@@ -31,12 +31,12 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>5.9.9_msvc2015_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core;gui;widgets;network;websockets</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
     <QtInstall>5.9.9_msvc2015_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core;gui;widgets;network;websockets</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\main.cpp" />
+    <ClCompile Include="Src\Tool\WebSocketClient\WebSocketClient.cpp" />
     <ClCompile Include="Src\UI\Lan\Lan.cpp" />
     <ClCompile Include="Src\UI\Login\Login.cpp" />
   </ItemGroup>
@@ -100,6 +101,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Src\UI\Login\Login.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Src\Tool\WebSocketClient\WebSocketClient.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

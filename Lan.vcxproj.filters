@@ -21,6 +21,12 @@
     <Filter Include="Src\UI\Login">
       <UniqueIdentifier>{2cce5634-ea4f-4786-a29a-c57681fd9ed6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Src\Tool">
+      <UniqueIdentifier>{7fadf573-0aa6-4d89-952e-1ba796ec762a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Tool\WebSocketClient">
+      <UniqueIdentifier>{db1dfd8b-c529-4d9d-91b3-0df09a0d9632}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="Lan.qrc">
@@ -37,6 +43,9 @@
     <ClCompile Include="Src\UI\Login\Login.cpp">
       <Filter>Src\UI\Login</Filter>
     </ClCompile>
+    <ClCompile Include="Src\Tool\WebSocketClient\WebSocketClient.cpp">
+      <Filter>Src\Tool\WebSocketClient</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Src\UI\Lan\Lan.h">
@@ -44,6 +53,9 @@
     </QtMoc>
     <QtMoc Include="Src\UI\Login\Login.h">
       <Filter>Src\UI\Login</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\Tool\WebSocketClient\WebSocketClient.h">
+      <Filter>Src\Tool\WebSocketClient</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
